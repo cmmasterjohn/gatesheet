@@ -1,0 +1,449 @@
+<!doctype html>
+<style>
+header{
+    text-align:center;
+}
+#info{
+    font-size:10pt;
+    height:20px;
+    width:50px;
+    text-align: Center;
+}
+#txt1 {
+    font-size:20pt;
+    height:30px;
+    width:60px;
+    text-align: center;
+}
+#time{
+    font-size:16pt;
+    height:30px;
+    width:60px;
+    text-align: center;
+}
+#tow{
+    font-size:15pt;
+    text-align: center;
+}
+#towe2{
+    font-size:15pt;
+    text-align: center;
+}
+#E4 {
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#E3{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#E2{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#E1{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#D1{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#N5{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#N6{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#N7{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#N8{
+    border: 1px solid black;
+    text-align: Center;
+    padding:10px;
+}
+#towby{
+    font-size:10pt;
+    height:20px;
+    width:50px;
+    text-align: Center;
+}
+#to{
+    font-size:10pt;
+    height:20px;
+    width:50px;
+    text-align: Center;
+}
+
+</style>
+<script>
+function sync(x)
+{
+  var x = document.getElementById('to');
+  var n2 = document.getElementById('n2');
+  n2.value = x.value;
+
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="database" type="text" href="database.txt">
+
+<header>THEPDXMM</header>
+<div style ="text-align:center">
+<table id="E4" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value = E4 size="5"></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="E3" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="E3" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="E2" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="E2" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="E1" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="E1" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center" ><select id="towe2" ><option >STAY</option><option>TOW BY</option><option >QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="towby" value=TOWBY name="towby"></td>
+    </tr>
+</table>
+<table id="D1" >
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="D1" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="N5" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="N5" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="N6" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="N6" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="N7" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="N7" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="TOWBY"></td>
+    </tr>
+</table>
+<table id="N8" style="float: left">
+    <tr>    
+    <th colspan="2"><input type="text" id="txt1" value="N8" size="5" readonly></th>
+    </tr>
+    <tr>
+    <th><input type="text" id="txt1" value="In" size="5"  readonly></th>
+    <th><input type="text" id="txt1" value="Out" size="5"  readonly></th>
+    </tr>
+    <tr>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    <td><input type="text" id="time" value="TI:ME" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="text" id="info" value="CHK"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="Tech(s)" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    <td><input type="text" id="tech" value="" size="5"></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><select id="tow"><option>STAY</option><option>TOW BY</option><option>QUICK T</option></select></td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center" ><input type="text" id="to" onkeyup="sync(to)" value="TOWB"></td>
+    </tr>
+</table>
+</div>
+<form action="\Users\frank\Google Drive\action_page.php">
+<input type="time">
+
+<br><br><br><br><br><br><br><br>
+
+
+
+<input type=text id="writeMe" onkeyup="sync()">
+<input type=text id="changeMe">
+<br>
+<input type="submit" value=copy onclick = "click()">
+
+<input type="text" name="n1" id="n1" onkeyup="sync(n1)">
+<input type="text" name="n2" id="n2"/>
+</form>
+
+<script type="text/javascript">
+
+function click(){
+    document.getElementById("writeMe") = blue
+}
+
+
+
+//<p id="E41"></p>// Create an object:
+var E4 = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+function fE4() {
+    var x = document.getElementById("E41").value;
+    var changeme = 
+}
+
+function myfunction() { 
+var first = document.getElementById("writeMe").value;
+// var second = document.getElementById("changeMe").value; 
+var answer = parseFloat(first);
+
+var textbox3 = document.getElementById('changeMe');
+changeMe.value=answer;
+ } 
+
+document.getElementById("E41").innerHTML =
+E4.firstName + " is " + E4.age + " years old.";
+
+
+
+function changeText(){
+ document.getElementById('boldStuff').innerHTML = 'Fred Flinstone';
+}
+
+
+</script>
+</body>
+
+
+<!--
+//<p>Welcome to the site <b id='boldStuff'>dude</b> </p> 
+//<input type='button' onclick='changeText()' value='Change Text'/>
+-->
+
+
+
+
+
+
+
+
+
